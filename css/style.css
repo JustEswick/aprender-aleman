@@ -676,13 +676,25 @@ footer {
     
     /* Games */
     .match-pairs-container {
-        flex-direction: column;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .pairs-col {
+        width: 50%;
+    }
+    
+    .pair-btn {
+        padding: 10px 5px;
+        font-size: 0.9rem;
     }
     
     #game-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-bottom: 10px;
     }
     
     .progress-bar-container {
@@ -696,15 +708,15 @@ footer {
     
     /* Word search shrinkage */
     .ws-grid {
-        grid-template-columns: repeat(12, 22px) !important;
-        grid-auto-rows: 22px !important;
-        gap: 2px !important;
+        grid-template-columns: repeat(12, min(28px, calc(100vw / 14))) !important;
+        grid-auto-rows: min(28px, calc(100vw / 14)) !important;
+        gap: 1px !important;
         margin: 0 auto;
     }
     .ws-cell {
-        width: 22px !important;
-        height: 22px !important;
-        font-size: 0.9rem !important;
+        width: min(28px, calc(100vw / 14)) !important;
+        height: min(28px, calc(100vw / 14)) !important;
+        font-size: 0.8rem !important;
     }
     
     /* Buttons */
