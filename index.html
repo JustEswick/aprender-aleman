@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AprenderAlemán</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h1 class="logo">AprenderAlemán</h1>
+            <nav>
+                <button class="nav-btn active" id="nav-games">🎮 Mini-juegos</button>
+                <button class="nav-btn" id="nav-wiki">📚 Wiki de Apuntes</button>
+            </nav>
+        </aside>
+        
+        <div class="main-content">
+            <!-- WIKI SECTION -->
+            <section id="wiki-view" class="view hidden">
+                <div class="wiki-container">
+                    <div class="wiki-header-container">
+                        <h1>Wiki de Alemán</h1>
+                    </div>
+                    <div class="wiki-content" id="wiki-content">
+                        <!-- El contenido de la wiki se inyecta desde JS -->
+                    </div>
+                </div>
+                
+                <!-- Índice Lateral Estático (aprovechando espacio en blanco) -->
+                <aside class="wiki-sidebar">
+                    <h3>Índice</h3>
+                    <div id="toc-list" class="sticky-toc">
+                        <!-- JS inyecta el menú aquí -->
+                    </div>
+                </aside>
+            </section>
+
+            <!-- GAMES SECTION -->
+            <section id="game-view" class="view">
+                <div class="app-container">
+                    <header id="game-header" class="hidden">
+                        <button id="exit-btn" class="exit-btn">✖</button>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+                        <div id="progress-text" style="font-weight:bold; color:var(--gray-dark); margin-left: 15px; font-size: 1.1rem; min-width: 60px; text-align:right;"></div>
+                    </header>
+                    <main id="game-container">
+                        <!-- Game content injected here -->
+                    </main>
+                    <footer>
+                        <button id="check-btn" class="btn btn-primary" disabled>Comprobar</button>
+                    </footer>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="data/wikiData.js"></script>
+    <script src="data/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
