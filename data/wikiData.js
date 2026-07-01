@@ -91,7 +91,7 @@ const wikiData = [
                         <tr><td><strong>Sie / sie</strong></td><td>Usted(es) / Ellas, Ellos</td><td>Sie (mayúscula) = formal. sie (minúscula) = plural</td></tr>
                     </table>
                     <div class="note-box">
-                        <strong>💡 Ejemplos Prácticos (Presentación Nicos Weg):</strong><br>
+                        <strong>💡 Ejemplos Prácticos (Presentación):</strong><br>
                         <em>Ich bin einundzwanzig Jahre alt.</em> (Tengo 21 años)<br>
                         <em>Ich wohne in Metepec.</em> (Vivo en Metepec)<br>
                         <em>Ich bin ein Einzelkind.</em> (Soy hijo único - nota: "Einzelsohn" significa "único hijo varón")<br>
@@ -422,7 +422,7 @@ const wikiData = [
                         <div class="grid-item"><strong>das Bild, -er</strong> = Cuadro</div>
                         <div class="grid-item"><strong>die Lampe, -n</strong> = Lámpara</div>
                         <div class="grid-item"><strong>der Schrank, ¨-e</strong> = Armario</div>
-                        <div class="grid-item"><strong>der Sessel, -</strong> = Sillón</div>
+                        <div class="grid-item"><strong>der Sessel, -</strong> = Sillón (1 pieza)</div>
                         <div class="grid-item"><strong>das Sofa, -s</strong> = Sofá</div>
                         <div class="grid-item"><strong>der Stuhl, ¨-e</strong> = Silla</div>
                         <div class="grid-item"><strong>der Tisch, -e</strong> = Mesa</div>
